@@ -9,7 +9,7 @@ from dotenv import load_dotenv
 from llama_index.core.memory import ChatMemoryBuffer
 from llama_index.core.chat_engine import ContextChatEngine
 from llama_index.core.prompts import ChatPromptTemplate
-from llama_index.llms.openai import OpenAI as LlamaOpenAI
+from llama_index.llms.openai import OpenAI
 from llama_index.core import SimpleDirectoryReader, VectorStoreIndex
 
 # Load environment variables from .env file
@@ -29,7 +29,7 @@ class CuriosityBlocksAPI:
         """
         try:
             # Initialize the LLM for LlamaIndex
-            self.llm = LlamaOpenAI(
+            self.llm = OpenAI(
                 model="gpt-3.5-turbo-16k",
                 temperature=0.7,
                 max_tokens=4000,
@@ -80,7 +80,7 @@ Topics covered in this application include:
 - History (Ancient, Medieval, Modern)
 - Literature and Language Arts
 - Geography and Social Studies
-- Technology and Computer Science
+- Technology and Computer Science
                         """)
                     print(f"Created sample content file: {sample_file_path}")
                 

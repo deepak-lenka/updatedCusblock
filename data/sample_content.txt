@@ -1,0 +1,12 @@
+This is a sample educational content file for the Curiosity Blocks application.
+
+The application uses this file to initialize the document index when no other content is available.
+
+Topics covered in this application include:
+- Science (Physics, Chemistry, Biology, Astronomy)
+- Mathematics (Algebra, Geometry, Calculus)
+- History (Ancient, Medieval, Modern)
+- Literature and Language Arts
+- Geography and Social Studies
+- Technology and Computer Science
+                    
